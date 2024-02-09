@@ -4,6 +4,8 @@ Documentation is partially hand written, partially generated. Allows for impleme
 This is a product based transformer that has worked in creating numerous projects.
 
 ```ts
+// Due to this class implementing Start & Initialize it will add reflection via the transformer
+// The framework will then register this as a controller or service.
 class ExampleController implements Start, Initalize {
   // Automatically passes dependencies when compiled for controllers. During compiling
   // reflection meta is registered.
